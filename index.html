@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html class="ieOld ie6" dir="ltr" lang="en-US" xmlns:fb="http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if IE 7]>
+<html class="ieOld ie7" dir="ltr" lang="en-US" xmlns:fb="http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ieOld ie8" dir="ltr" lang="en-US" xmlns:fb="http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="en-US" xmlns:fb="http://ogp.me/ns/fb#">
+<!--<![endif]-->
+<html lang="en"  >
+
+    <head>
+        <meta charset="utf-8">
+        <!--<meta name="viewport" content="width=880">-->
+        <link rel=icon href="img/favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,700italic' rel='stylesheet' type='text/css'>
+        <link rel=stylesheet href="css/style.css">
+      
+        <script src="js/jquery-1.8.0.js"></script>
+        <script src="js/jquery-ui-1.8.23.effects.min.js"></script>
+        <script src="js/main.js"></script>
+        <title> OpenERP v7 </title>
+    </head>
+
+    <body>
+
+        <!-- Facebook -->
+        <div id="fb-root"></div>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '185197954948087', // App ID //TODO this is The OpenERP TEST app id. put the real one on launch
+              //TODO channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
+              //channelUrl : '//localhost/channel.html', // Channel File
+              status     : true, // check login status
+              cookie     : true, // enable cookies to allow the server to access the session
+              xfbml      : true,  // parse XFBML
+              oauth      : true
+            });
+
+            // Go to beta website when the FB like button is clicked
+            FB.Event.subscribe('edge.create', function(href, widget){
+                window.location.href = 'http://www.perdu.com';  //TODO replace with actual BETA url
+            });
+
+            console.log('uhuhhhhh');
+
+            FB.login( function(response){
+                console.log('Login!:',response);
+            });
+          };
+
+          // Load the SDK Asynchronously
+          (function(d){
+             var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement('script'); js.id = id; js.async = true;
+             js.src = "//connect.facebook.net/en_US/all.js";
+             ref.parentNode.insertBefore(js, ref);
+           }(document));
+        </script>
+
+        <!-- LinkedIn -->
+        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+
+        <script>
+            window.redirect_linkedin = function(){
+                window.location.href = 'http://www.perdu.com'; // TODO replace with actual BETA url
+            };
+        </script>
+
+        <div class="main-shadow launch">
+            <img class="shadow" src="img/shadow-small.png" />
+        </div>
+
+        <div class="slideshow">
+            <div class="frame">
+                <img src="img/screenshots/sc04.png" />
+                <img src="img/screenshots/sc02.png" />
+                <img src="img/screenshots/sc00.png" />
+                <img src="img/screenshots/sc03.png" />
+                <img src="img/screenshots/sc05.png" />
+                <img src="img/screenshots/last.png" />
+            </div>
+            <div class="overlay"></div>
+            <div class="fog"></div>
+        </div>
+
+        <div class="main launch">
+            <h1>Sorry <span id="our-fine-competitors">SAP</span></h1>
+            <h2>OpenERP <span class="strong">7.0</span></h2>
+            <p>
+                Is about to be released <span class='countdown'>quite soon</span>
+            </p>
+            <p>
+                <b>Share</b> the news and get immediate access to the <b>beta!</b>
+            </p>
+            <p class='social'>
+                <script type="IN/Share" data-url="http://www.openerp.com/7b" data-counter="right" data-onsuccess="redirect_linkedin"></script>
+                <fb:like href="http://www.openerp.com/7b" send="false" layout="button_count" width="150" show_faces="false"></fb:like>
+            </p>
+            
+        </div>
+
+        <div class="footer">
+            <ul>
+                <li><a href="">Making of</a></li>
+                <li><a href="">Go to the old Website</a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>
