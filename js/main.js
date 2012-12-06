@@ -5,7 +5,7 @@ window.onload = function(){
 
     /* ------- Release Date Countdown -------- */
 
-    var releasedate = new Date('18 December 2012 14:07:00 GMT');     // TODO put the real release date
+    var releasedate = new Date('21 December 2012 21:00:00 GMT');     // TODO put the real release date
 
     var countdown = function(){
         var now = new Date();
