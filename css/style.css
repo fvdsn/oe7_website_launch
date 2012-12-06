@@ -117,25 +117,36 @@ img.arrow {
   height: 135px;
   width:  1400px;
 }
+.main-shadow.app{
+    margin-top: 125px;
+    margin-left: -375px;
+}
+.main-shadow.app img{
+    height: 135px;
+    width: 750px;
+}
 
 .main.launch{
   margin-top:  -140px;
   margin-left: -30px;
 }
+.main.app {
+  margin-left: -220px;
+}
 
-.launch h1{
+.launch h1, .app h1{
   font-size: 100px;
 }
 
-.launch h2{
+.launch h2, .app h2{
   font-size: 35px;
 }
 
-.launch p{
+.launch p, .app 2{
   font-size: 18px;
 }
 
-.launch p.social{
+.launch p.social, .app p.social{
     margin-top:5px;
 }
 
